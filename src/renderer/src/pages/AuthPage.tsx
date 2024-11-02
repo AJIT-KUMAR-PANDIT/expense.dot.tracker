@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { loginUser, signupUser } from '../../../db/signalDbConfig'
+import fullLogo from '@renderer/assets/full-logo.png'
 
 interface User {
   email: string
@@ -62,7 +63,9 @@ const AuthPage: React.FC<AuthPageProps> = ({ setIsAuthenticated }) => {
   return (
     <>
       <div className="h-screen flex flex-col justify-center items-center bg-gray-100">
-        <div className="text-3xl font-bold">.Xpense Tracker</div>
+        <div className="text-3xl font-bold">
+          <img src={fullLogo} className="h-16 " />
+        </div>
         <div className="bg-white p-8 rounded-lg shadow-lg w-96">
           <h2 className="text-2xl font-bold mb-4">{isLogin ? 'Login' : 'Signup'}</h2>
           <form onSubmit={handleSubmit}>
