@@ -1,4 +1,5 @@
 import profilePic from '@renderer/assets/resources/img/Profile Picture.svg'
+import Time from './Time'
 
 export default function UserInfo(): JSX.Element {
   return (
@@ -15,7 +16,7 @@ export default function UserInfo(): JSX.Element {
         Sophie Campbell
       </p>
       <p className="absolute left-[454px] top-[186px] text-lg italic text-left text-[#5d5d5d]">
-        22 August, Thursday
+        <Time />
       </p>
       <div className="w-[350px] h-[185px]">
         <p className="absolute left-[454px] top-[344px] text-base italic text-left text-black">

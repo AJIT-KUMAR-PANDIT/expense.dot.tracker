@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard'
 import ProtectedRoute from './components/auth/ProtectedRoute'
 import fullLogo from './assets/full-logo.png'
 import nakprcLogo from './assets/nakprc.webp'
+import YourName from './pages/YourName'
 
 function App(): JSX.Element {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,6 +24,7 @@ function App(): JSX.Element {
                   </ProtectedRoute>
                 }
               />
+              <Route path="/yourname" element={<YourName />} />
             </Routes>
           </Router>
         </div>
