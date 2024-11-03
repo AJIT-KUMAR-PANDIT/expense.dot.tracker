@@ -6,6 +6,7 @@ import ProtectedRoute from './components/auth/ProtectedRoute'
 import fullLogo from './assets/full-logo.png'
 import nakprcLogo from './assets/nakprc.webp'
 import YourName from './pages/YourName'
+import Logo from '../src/assets/logo.png'
 
 interface MenuItem {
   name: string
@@ -17,20 +18,20 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   {
     name: 'Home',
-    icon: 'https://via.placeholder.com/24/FF0000',
+    icon: `${Logo}`,
     description: 'Go to the Home page',
     path: '/'
   },
   {
     name: 'Settings',
-    icon: 'https://via.placeholder.com/24/00FF00',
+    icon: `${Logo}`,
     description: 'Adjust your preferences',
     path: '/settings'
   },
   {
     name: 'About',
-    icon: 'https://via.placeholder.com/24/0000FF',
-    description: 'Learn more about us',
+    icon: `${Logo}`,
+    description: 'Find out more about us',
     path: '/about'
   }
 ]
